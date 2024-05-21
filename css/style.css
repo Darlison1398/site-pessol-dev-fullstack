@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+header{
+    background-color: rgb(38, 53, 59);
+    color: #FFF;
+    padding: 10px;
+}
+
+.container-projetc{
+    justify-content: center;
+    display: flex;
+    gap: 2em;
+}
+
+.cont-box{
+    background-color: rgb(94, 50, 86);
+    color: #FFF;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+span{
+    font-size: larger;
+}
+
+/*  Projetos Front-end */
+.cont-project-front-end{
+    padding: 10px;
+    display: flex;
+    gap: 2em;
+    background-color: bisque;
+    border-radius: 20px;
+}
+.section-box{
+    display: flex;
+    gap: 2em;
+    width: 100%;
+}
+
+
+
+footer{
+    background-color: rgb(38, 53, 59);
+    color: #FFF;
+    padding: 20px;
+}
+
+
+/*  resposividade do site  */
+@media (max-width: 768px){
+
+    .container-projetc{
+        flex-direction: column;
+    }
+
+    .cont-box{
+        max-width: 100%;
+    }
+
+    .section-box{
+        flex-direction: column;
+    }
+
+    .section-box div{
+        width: 100%;
+    }
+
+    #btn-zap{
+        width: 100%;
+    }
+}
