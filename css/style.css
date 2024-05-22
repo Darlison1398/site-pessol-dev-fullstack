@@ -7,7 +7,7 @@ body{
 }
 
 header{
-    background-color: rgb(38, 53, 59);
+    background-color: rgb(80, 178, 216);  
     color: #FFF;
     padding: 10px;
 }
@@ -19,23 +19,33 @@ header{
 }
 
 .cont-box{
-    background-color: rgb(94, 50, 86);
+    background-color: rgb(89, 177, 165);
     color: #FFF;
     max-width: 300px;
     padding: 10px;
     border-radius: 20px;
+    border: solid 3px rgb(89, 177, 165);
+    
+}
+
+.cont-box:hover{
+    background-color: transparent;
+    color: #000;
+
 }
 
 span{
     font-size: larger;
 }
 
+
+
 /*  Projetos Front-end */
 .cont-project-front-end{
     padding: 10px;
     display: flex;
     gap: 2em;
-    background-color: bisque;
+    background-color: rgb(127, 228, 231);
     border-radius: 20px;
 }
 .section-box{
@@ -44,14 +54,46 @@ span{
     width: 100%;
 }
 
+.section-box div span {
+    color: rgb(138, 37, 233);
+}
 
+.box-project h3{
+    color: rgb(15, 28, 145);
+}
+
+#btn-zap{
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 footer{
-    background-color: rgb(38, 53, 59);
+    background-color: rgb(80, 178, 216);
     color: #FFF;
     padding: 20px;
 }
 
+
+/* icon  */
+.icon i{
+    font-size: 22pt;
+    color: rgb(15, 28, 145);
+}
+
+i:hover {
+    color: #FFF;
+}
 
 /*  resposividade do site  */
 @media (max-width: 768px){
