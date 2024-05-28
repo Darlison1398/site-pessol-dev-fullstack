@@ -12,6 +12,6 @@ function hub() {
     window.open('https://github.com/Darlison1398');
 }
 
-window.document.querySelector('.fa-whatsapp').addEventListener('onmouseover', function() {
-    "whatsapp";
-}) 
+function port() {
+    window.open('https://dev-page.netlify.app');
+} 

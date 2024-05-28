@@ -46,6 +46,55 @@ span{
     margin-top: auto;
 }
 
+/*   ICONE C0NTATOS   */
+.icon {
+    position: relative;
+    display: inline-block;
+}
+
+.icon .tooltip {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona a tooltip acima do ícone */
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.icon .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Abaixo da tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.icon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*  Projetos Front-end */
 .cont-project-front-end{
     padding: 10px;
