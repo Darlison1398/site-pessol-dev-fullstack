@@ -27,13 +27,17 @@ header{
     border: solid 3px rgb(89, 177, 165);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 .cont-box:hover{
     background-color: transparent;
     color: #000;
+
+}
+
+.cont-box:hover h4{
+    color: rgb(138, 37, 233);
 
 }
 
@@ -86,17 +90,9 @@ span{
 }
 
 
-
-
-
-
-
-
-
-
-
 /*  Projetos Front-end */
 .cont-project-front-end{
+    box-sizing: border-box;
     padding: 10px;
     display: flex;
     gap: 2em;
