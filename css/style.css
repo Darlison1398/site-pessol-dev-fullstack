@@ -56,6 +56,26 @@ span{
     display: inline-block;
 }
 
+/*  skills  */
+.cont-skils {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.hab {
+    text-align: center;
+    width: 140px;
+    max-width: 140px;
+    background-color:rgb(15, 28, 145);
+    color: #FFF;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+
 .icon .tooltip {
     visibility: hidden;
     width: 100px;
