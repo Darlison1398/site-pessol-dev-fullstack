@@ -2,8 +2,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-
 }
 
 header{
@@ -12,12 +10,16 @@ header{
     padding: 10px;
 }
 
-.container-projetc{
+/*.container-projetc{
     justify-content: center;
     display: flex;
     gap: 2em;
-}
+}*/
 
+.container-projetc{
+    display: flex;
+    gap: 1em;
+}
 .cont-box{
     background-color: rgb(89, 177, 165);
     color: #FFF;
@@ -37,7 +39,7 @@ header{
 
 }
 
-.cont-box:hover h4{
+.cont-box:hover h5{
     color: rgb(138, 37, 233);
 
 }
@@ -46,10 +48,10 @@ span{
     font-size: larger;
 }
 
-#link{
+/*#link{
     justify-self: end;
     margin-top: auto;
-}
+}*/
 
 /*   ICONE C0NTATOS   */
 .icon {
@@ -173,12 +175,22 @@ i:hover {
 /*  resposividade do site  */
 @media (max-width: 768px){
 
+    h5{
+        font-size: 11pt !important;
+    }
+
+    h3{
+        font-size: 14pt !important;
+    }
+
     .container-projetc{
         flex-direction: column;
     }
 
     .cont-box{
         max-width: 100%;
+        min-height: 30vh;
+        max-height: 40vh;
     }
 
     .section-box{
