@@ -1,7 +1,7 @@
 
 function zap() {
     onmouseover = "Whatsapp";
-    window.open('https://api.whatsapp.com/send?phone=5511999999999&text=Olá, tudo bem?');
+    window.open('https://api.whatsapp.com/send?phone=5548996343096&text=Oi, tudo bem? Vi seu website sobre o EducaBusca e resolvi entrar em contato para saber mais sobre ele. :)');
 }
 
 function din() {
@@ -11,7 +11,3 @@ function din() {
 function hub() {
     window.open('https://github.com/Darlison1398');
 }
-
-function port() {
-    window.open('https://dev-page.netlify.app');
-} 

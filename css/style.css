@@ -10,11 +10,15 @@ header{
     padding: 10px;
 }
 
-/*.container-projetc{
-    justify-content: center;
-    display: flex;
-    gap: 2em;
-}*/
+p, li{
+    font-size: 14pt;
+    line-height: 1.5;
+    font-family: Montserrat;
+}
+
+h5, h4 {
+    font-family: monospace;
+}
 
 .container-projetc{
     display: flex;
@@ -48,10 +52,12 @@ span{
     font-size: larger;
 }
 
-/*#link{
-    justify-self: end;
-    margin-top: auto;
-}*/
+.carousel-item img {
+    width: 100%;
+    height: 50%;
+    /*background-color: rgb(162, 215, 235);*/
+}
+
 
 /*   ICONE C0NTATOS   */
 .icon {
@@ -59,13 +65,6 @@ span{
     display: inline-block;
 }
 
-/*  skills  
-.cont-skils {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-}*/
 .carousel-item{
     gap: 1em;
 }
@@ -79,8 +78,6 @@ span{
     padding: 10px;
     border-radius: 30px;
 }
-
-
 
 .icon .tooltip {
     visibility: hidden;
@@ -115,28 +112,27 @@ span{
     opacity: 1;
 }
 
+@keyframes blinking {
+    0%, 100% { opacity: 1; } 
+    50% { opacity: 0; }     
+}
 
-/*  Projetos Front-end */
-.cont-project-front-end{
-    box-sizing: border-box;
-    padding: 10px;
+.blinking-text {
+    animation: blinking 1s infinite;
+}
+
+#block-box-dd {
     display: flex;
-    gap: 2em;
-    background-color: rgb(127, 228, 231);
-    border-radius: 20px;
-}
-.section-box{
-    display: flex;
-    gap: 2em;
-    width: 100%;
 }
 
-.section-box div span {
-    color: rgb(138, 37, 233);
+#block-box-dd .box-dd1  {
+    max-width: 400px;
+    width: 400px;
 }
 
-.box-project h3{
-    color: rgb(15, 28, 145);
+#block-box-dd .box-dd2 {
+    max-width: 500px;
+    width: 500px;
 }
 
 #btn-zap{
@@ -179,6 +175,15 @@ i:hover {
         font-size: 11pt !important;
     }
 
+    p, li{
+        font-size: 12pt;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(162, 215, 235);
+    }
+
     h3{
         font-size: 14pt !important;
     }
@@ -189,19 +194,32 @@ i:hover {
 
     .cont-box{
         max-width: 100%;
-        min-height: 30vh;
-        max-height: 40vh;
+       
     }
 
-    .section-box{
-        flex-direction: column;
+    #block-box-dd {
+        display: block;
     }
-
-    .section-box div{
+    
+    #block-box-dd .box-dd1  {
         width: 100%;
+    }
+    
+    #block-box-dd .box-dd2 {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    
+    #btn-zap{
+        animation: float 5s ease-in-out infinite;
     }
 
     #btn-zap{
+        margin-top: 1em;
         width: 100%;
+    }
+
+    .text-btn-zap{
+        margin-top: 1em;
     }
 }

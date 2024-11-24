@@ -12,19 +12,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Cormorant+Garamond:wght@500&family=Fredericka+the+Great&family=Montserrat:wght@400;500;600&family=Nunito:wght@300;400&family=Quicksand&family=Roboto&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="container">
-            <h1 class="text-center" data-translate="name" >EducaBusca</h1>
-            <h5 class="text-center" data-translate="intro">Aqui nesse site, você encontrará informações sobre minha carreira como desenvolvedor de Software</h5><hr>
+            <h1 class="text-center">EducaBusca</h1>
+            <h5 class="text-center">
+                O site ideal para você que quer ingressar no ensino superior público.
+            </h5><hr>
         
             <div class="container">
                 <div class="d-flex justify-content-center" style="gap: 2em;">
                     <div class="icon"><i class="fa-brands fa-whatsapp" onclick="zap()"></i> <span class="tooltip">WhatsApp</span></div>
                     <div class="icon"><i class="fa-brands fa-linkedin" onclick="din()"></i> <span class="tooltip">LinkedIn</span></div>
                     <div class="icon"><i class="fa-brands fa-github" onclick="hub()"></i> <span class="tooltip">GitHub</span></div>
-                    <div class="icon"><i class="fa-solid fa-briefcase" onclick="port()"></i> <span class="tooltip">Portfólio</span></div>
                 </div>
             </div>
 
@@ -35,14 +40,16 @@
         <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" >
                 <div class="carousel-item active">
-                    <img src="./img/logo.svg" alt="" width="100%" height="50%">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="./img/logo2.svg" alt="" width="100%" height="50%">
+                    <img src="./img/logo.svg" alt="" >
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/logo3.svg" alt="" width="100%" height="50%">
+                    <img src="./img/logo2.svg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/logo3.svg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/logo4.svg" alt="">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
@@ -67,7 +74,14 @@
                 O EducaBusca é um site web que pode ser acessado de forma gratuita por qualquer
                 usuário. Ele tem o propósito de centralizar informações sobre processos seletivos
                 abertos em Universidades públicas e Institutos Federais, visando facilitar que os 
-                usuários consigam uma vaga em uma instituição de ensino superior público.
+                usuários consigam uma vaga em uma instituição de ensino superior público. Ele vai
+                reunir, em um mesmo site, processos seletivos de diversas faculdades públicas do 
+                país, tornando o processo de busca por vestibulares mais ágil, visto que o usuário 
+                não precisa acessar vários sites de faculdades públicas atrás de vestibulares abertos.
+                Isso, além de ajudar o usuário a encontrar mais rapidamente os processos seletivos,
+                também ajuda as faculdades públicas a conseguirem um maior número de participantes 
+                em seus vestiubulares, pois os processos seletivos disponíveis no EducaBusca estarão
+                sendo divulgados a nível nacional e não apenas regional.
             </p>
             <p>
                 Ao acessar a plataforma, os usuários poderão ver logo de cara os processos seletivos 
@@ -90,227 +104,60 @@
 
             <div class="container-projetc mt-3">
                 <div class="cont-box">
-                    <h5 class="text-center">Acesso em primeira mão aos vestibulares que estão ocorrendo</h5>
+                    <h5>Acesso em primeira mão aos vestibulares que estão ocorrendo</h5>
                 </div>
 
                 <div class="cont-box">
-                    <h5 class="text-center">Ser notificado sobre os processos seletivos do seu interesse.</h5>
+                    <h5>Ser notificado sobre os processos seletivos do seu interesse.</h5>
                 </div>
 
                 <div class="cont-box">
-                    <h5 class="text-center">Ver no mesmo sistema várias possibilidades de ingresso</h5>
+                    <h5>Acompanhar notícias postadas pelas faculdades</h5>
                 </div>
 
                 <div class="cont-box">
-                    <h5 class="text-center">Acompanhar notícias postadas pelas faculdades</h5>
-                </div>
-
-                <div class="cont-box">
-                    <h5 class="text-center">Ver dicas importantes sobre formas de ingresso</h5>
+                    <h5>Ver dicas importantes sobre formas de ingresso</h5>
                 </div>
             </div>
         </div>
 
-
-        <!--div class="container mt-5">
-            <h3 class="text-center" data-translate="tl1" style="color: #5a5757 ;">Início da Jornada</h3>
-            <p data-translate="text1">
-                Ingressei no mundo da programação em novembro de 2021, quando dei os primeiros passos no estudo da lógica de programação utilizando a linguagem Python por meio de um curso que adquiri em uma plataforma de ensino. Em fevereiro de 2022, dei continuidade à minha formação ingressando no curso de graduação em Análise e Desenvolvimento de Sistemas no Instituto Federal de Santa Catarina, onde estou atualmente e com previsão de se formar em Dezembro de 2024.
-            </p>
-            <p class="mt-3" data-translate="about">
-                Em agosto de 2022, iniciei minha jornada de estudos na tecnologia Java no segundo semestre da Faculdade. De início, gostei muito da tecnologia e me dediquei a estudá-la além da sala de aula. Daquele momento em diante, decidi que essa seria uma tecnologia que iria me aprofundar cada vez mais. Na faculdade, além de lógica de programação, eu tive a oportunidade de aprender sobre Programação Orientada a Objetos, Padrão de Projetos, Arquitetura MVC, Hibernate, Testes e Desenvolvi alguns sistemas no ambiente acadêmico. Visando expandir meus conhecimentos nessa tecnologia fantástica, passei a estudar o Framework Spring Boot para o desenvolvimeno de APIs RESTFull e microsserviços, integração com aplicação Front-end, Spring Security, JWT, consultas JPQL, gerenciador de pacotes: Maven, Lombok, jUnit, JDBC, etc. Já desenvolvi várias APIs Rest usando o Spring em conjunto com banco de dados como o PostgreSQL e o MySQL.
-            </p><br>
-
-            <h3 class="text-center" data-translate="tl1" style="color: #5a5757 ;">Caminhando</h3>
-            <p>
-                Em Fevereiro de 2023, consegui minha primeira oportunidade na área. Na época, eu fui contratado como 
-                Programador de Sistemas da Informação para trabalhar em uma emrpesa de Automação Industrial. Nessa empresa,
-                eu era resposável por densenvolver novas funcionalidades para os sitemas interno e externo, bem como fazer 
-                constantes atualizações no site web e prestar suporte técnico aos clientes. As tecnologias com as quais eu 
-                trabalhei foram: Php, Codeigniter, Javascript, JQuery, Bootstrap, Html, Css, Java, Hibernate e PostgreSQL.
-                Além disso, lidava com sistemas operacionais como o Linux e Windows e, as vezes, fazia alguns pequenos
-                processos no servidor. Trabalhei nessa empresa por 1 ano e 4 meses _ (entrei em Fevereiro de 2023 e sai no 
-                mês de Junho de 2024).
-            </p>
-            <p>
-                Em Agosto de 2023, fui contratado como autônomo para atuar como Desenvolvedor Full Stack no 
-                desenvolvimento de um projeto que fortifica a segurança de residências. Essa, foi uma experiência muito 
-                enriquecedora para mim, visto que eu atuei em várias fazes e partes do projeto. Lidei com o front e back-end 
-                da aplicação, bem como na análise de requisitos e testes da mesma. Para desenvolver o sistema eu escolhi
-                usar uma Arquitetura de microsserviços, visto que a aplicação tinha planos de ter tanto a versão Web como Mobile.
-                No desenvolvimento do Front-end, eu escolhi tecnologias como: React, Bootstrap, Javascript, Html e Css. Já no 
-                Back-end, usei tecnologias como: Java, Spring Boot, Spring Security, Auth0 e PostgreSQL. Para testar a aplicação, 
-                eu usei o Postman para testar as chamadas HTTP dos endpoints da API, usei o jUnitp para fazer testes ubnitários,
-                usei o jUnit + o Selenium para fazer alguns testes automatizados e usei o JMeter para realizar testes de carga e 
-                estress. Trabalhei nesse projeto por 9 meses  _ (entrei em Agosto de 2023 e sai no 
-                mês de Maio de 2024).
-            </p>
-            <p>
-                Atualmente, eu trabalho como Analista de Qualidade de Software em uma empresa de tecnologia. Aqui, eu sou resposável 
-                por realizar testes manuais e automatizados, bem como com a análise da documentaçaõ e requistos de cada sistema.
-                No meu dia a dia, sou encarregado de realizar testes de requisições usando ferramentas como o Postman, testes de 
-                carga e estress usando o K6, testes unitários usando o PHPUnit e testes de usabilidade dos sistemas.
-            </p>
-
-            <span data-translate="text3">
-                Abaixo estão algumas das minhas experiências profissionais
-            </span>
-
-            <div class="cont-project-front-end mt-4">
-                <div class="box-project">
-                    <h3 data-translate="tl2">Programador de Sistemas da Informação</h3>
-                    <div class="section-box">
-                        <div class="col-8">
-                            <p data-translate="text4">
-                                Essa é a parte de uma sistema Front-end onde eu uso apenas para estudar javascritp de modo geral. Nele, eu aproveito para fazer o consumo da API <strong>NOME DA API</strong> para que você possa ter uma experiência mais completa.
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <span data-translate="tl3">ACESSE O PROJETO NO GITHUB</span><br>
-                            <a href="https://github.com/darlison-silva/estudando-javascript" target="_blank">
-                                <button class="btn btn-primary">Acessar projeto</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cont-project-front-end mt-5">
-                <div class="box-project">
-                    <h3 data-translate="tl4">Bloco de Notas</h3>
-                    <div class="section-box">
-                        <div class="col-8">
-                            <p data-translate="text5">
-                                Essa é a parte de uma sistema Front-end onde eu uso apenas para estudar javascritp de modo geral. Nele, eu aproveito para fazer o consumo da API <strong>NOME DA API</strong> para que você possa ter uma experiência mais completa.
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <span data-translate="tl6">ACESSE O PROJETO NO GITHUB</span><br>
-                            <a href="https://github.com/darlison-silva/estudando-javascript" target="_blank">
-                                <button class="btn btn-primary">Acessar projeto</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cont-project-front-end mt-5">
-                <div class="box-project">
-                    <h3 data-translate="tl7">Login e Autenticação</h3>
-                    <div class="section-box">
-                        <div class="col-8">
-                            <p data-translate="text8">
-                                Essa é a parte de uma sistema Front-end onde eu uso apenas para estudar javascritp de modo geral. Nele, eu aproveito para fazer o consumo da API: NOME DA API para que você possa ter uma experiência mais completa.
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <span data-translate="tl8">ACESSE O PROJETO NO GITHUB</span><br>
-                            <a href="https://github.com/darlison-silva/estudando-javascript" target="_blank">
-                                <button class="btn btn-primary">Acessar projeto</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cont-project-front-end mt-5">
-                <div class="box-project">
-                    <h3 data-translate="tl5">Dispensa de Casa</h3>
-                    <div class="section-box">
-                        <div class="col-8">
-                            <p data-translate="text6">
-                                Essa é a parte de uma sistema Front-end onde eu uso apenas para estudar javascritp de modo geral. Nele, eu aproveito para fazer o consumo da API: NOME DA API para que você possa ter uma experiência mais completa.
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <span data-translate="tl9">ACESSE O PROJETO NO GITHUB</span><br>
-                            <a href="https://github.com/darlison-silva/estudando-javascript" target="_blank">
-                                <button class="btn btn-primary">Acessar projeto</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div-->
-    
-
         <div class="container mt-5">
-            <h3 class="text-center" style="color: #5a5757;">Skills</h3>
-            <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" >
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center" style="gap:1em;">
-                            <div class="hab"> <span>Html</span> </div>
-                            <div class="hab"> <span>Css</span> </div>
-                            <div class="hab"> <span>Javascript</span> </div>
-                            <div class="hab"> <span>React</span> </div>
-                            <div class="hab"> <span>Bootstrap</span> </div>
-                            <div class="hab"><span>Java</span> </div>
-                        </div>
+            <h3 class="text-info text-center blinking-text">Atenção!!!</h3>
+            <div class="alert alert-info text-center">
+                <strong>Esse não é o site oficial do EducaBusca!</strong>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-between" id="block-box-dd">
+                    <div class="d-flex box-dd1">
+                        <img src="./img/effort.png" alt="" class="col-4">
+                        <h5 style="color: rgb(138, 37, 233)" class="col-6">
+                            O site oficial do EducaBusca vai ser lançado em janeiro de 2025.
+                        </h5>
                     </div>
-                    <!--div class="carousel-item">
-                        <div class="d-flex justify-content-center" style="gap:1em;">
-                            <div class="hab"> <span>React</span> </div>
-                            <div class="hab"> <span>Bootstrap</span> </div>
-                            <div class="hab"><span>Java</span> </div>
-                        </div>
-                    </div-->
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center" style="gap:1em;">
-                            <div class="hab"><span>Spring</span> </div>
-                            <div class="hab"><span>SQL</span> </div>
-                            <div class="hab"><span>PostgreSQL</span> </div>
-                            <div class="hab"><span>MySQL</span> </div>
-                            <div class="hab"><span>Git</span> </div>
-                            <div class="hab"><span>Github</span> </div>
-                        </div>
+                    <div class="box-dd2">
+                        <p>
+                            O EducaBusca faz parte do meu projeto de TCC e este site é apenas uma breve explicação
+                            do que será o EducaBusca.
+                            Ele ainda está em desenvolvimento e vai passar por várias etapas de testes antes de ser
+                            lançado para o público.
+                        </p>
                     </div>
-                    <!--div class="carousel-item">
-                        <div class="d-flex justify-content-center" style="gap:1em;">
-                            <div class="hab"><span>MySQL</span> </div>
-                            <div class="hab"><span>Git</span> </div>
-                            <div class="hab"><span>Github</span> </div>
-                        </div>
-                    </div-->
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
 
-        <!--div class="container mt-5">
-            <h3 class="text-center" style="color: #5a5757 ;">Idiomas</h3>
-            <div class="container d-flex justify-content-center">
-                <div class="box-l">
-                    <div class="text-center">
-                        <span>Português</span>
-                        <div>Linguagem nativa</div>
-                    </div>
-                </div>
-                <div class="box-l">
-                    <div class="text-center">
-                        <span>Espanhol</span>
-                        <div>Intermediário</div>
-                    </div>
-                </div>
-                <div class="box-l">
-                    <div class="text-center">
-                        <span>Inglês</span>
-                        <div>Intermediário</div>
-                    </div>
-                </div>
-            </div>
-        </div-->
-
         <div class="container mt-5">
-            <h3 class="text-center" data-translate="text9" style="color: #5a5757;">Ainda tem dúvidas sobre algo?</h3>
-            <p class="text-center" style="color: rgb(138, 37, 233);" data-translate="text10">Entre em contato comigo através do meu whatsapp</p>
+            <h3 class=" text-info">Ficou com dúvidas sobre algo, ou gostaria de saber mais sobre o <strong> <span style="color: rgb(15, 28, 145);">EducaBusca</span> </strong>?</h3>
+            <p class="text-btn-zap">
+                Sinta-se a vontade para entrar em contato comigo através do meu whatsapp ou email. Você pode tirar 
+                suas dúvidas, enviar dicas de melhorias, críticas e sugestões. Sua opinião será bem-vinda e vai me 
+                ajudar a construir esse sistema que pode beneficiar várias pessoas que sonham em ingressar em uma 
+                faculdade pública.
+            </p>
 
             <div class="text-center">
-                <button class="alert alert-success col-3" id="btn-zap"> <strong>Whatsapp</strong></button>
+                <button class="alert alert-success col-3" id="btn-zap" onclick="zap()"> <strong>Whatsapp</strong></button>
             </div>
         </div>
     </div>
@@ -326,10 +173,9 @@
                 <div class="icon"> <i class="fa-brands fa-whatsapp" onclick="zap()"></i>  <span class="tooltip">WhatsApp</span> </div>
                 <div class="icon"><i class="fa-brands fa-linkedin" onclick="din()"></i>  <span class="tooltip">LinkedIn</span> </div>
                 <div class="icon"> <i class="fa-brands fa-github" onclick="hub()"></i>  <span class="tooltip">GitHub</span> </div>
-                <div class="icon"><i class="fa-solid fa-briefcase" onclick="port()"></i> <span class="tooltip">Portfólio</span> </div>
             </div>
         </div>
-        <p class="text-center mt-4" style="font-size: 16pt;"> &copy; Darlison Silva </p>
+        <p class="text-center mt-4" style="font-size: 14pt;"> &copy; Darlison Silva - 2024 - Todos os direitos reservados.</p>
 
         <!--div class="container-text-center">
             <img src="./logo.svg" width="100%" height="30px" alt="">
