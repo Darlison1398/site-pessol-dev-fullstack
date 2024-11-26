@@ -8,6 +8,10 @@ function din() {
     window.open('https://www.linkedin.com/in/darlison-silva-86113a191');
 }
 
+function mail() {
+    window.open('drsilva321dd@gmail.com');
+}
+
 function hub() {
     window.open('https://github.com/Darlison1398');
 }
