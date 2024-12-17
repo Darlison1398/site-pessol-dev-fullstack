@@ -1,7 +1,7 @@
 
 function zap() {
     onmouseover = "Whatsapp";
-    window.open('https://api.whatsapp.com/send?phone=5548996343096&text=Oi, tudo bem? Vi seu website sobre o EducaBusca e resolvi entrar em contato para saber mais sobre ele. :)');
+    window.open('https://api.whatsapp.com/send?phone=5548996343096&text=Oi, tudo bem? Vi seu website e resolvi entrar em contato pra gente conversar. :)');
 }
 
 function din() {
@@ -9,9 +9,13 @@ function din() {
 }
 
 function mail() {
-    window.open('drsilva321dd@gmail.com');
+    window.location.href = "mailto:drsilva321dd@gmail.com?subject=Contato&body=Olá, entrei em contato pelo site.";
 }
 
 function hub() {
     window.open('https://github.com/Darlison1398');
+}
+
+function cltemp() {
+    window.open('https://drsilva-clima-temp.netlify.app/');
 }

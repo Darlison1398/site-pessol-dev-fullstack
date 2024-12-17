@@ -1,13 +1,38 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container .card {
+    width: 60%;
+}
+.card img {
+    background-color: rgb(80, 178, 216);  
 }
 
-header{
-    background-color: rgb(80, 178, 216);  
+.icon i, .icon-header i{
+    font-size: 22pt;
+    color: rgb(15, 28, 145);
+}
+
+.icon-header i:hover{
+    color: rgb(80, 178, 216);
+}
+i:hover {
     color: #FFF;
-    padding: 10px;
+}
+
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+ul li{
+    list-style: none;
+    color: rgb(15, 28, 145);
+    font-weight: 500;
+}
+
+.list-group h5, .list-group-item h5{
+    color: rgb(138, 37, 233);
 }
 
 p, li{
@@ -16,14 +41,12 @@ p, li{
     font-family: Montserrat;
 }
 
-h5, h4 {
-    font-family: monospace;
+.container-projetc{
+    justify-content: center;
+    display: flex;
+    gap: 2em;
 }
 
-.container-projetc{
-    display: flex;
-    gap: 1em;
-}
 .cont-box{
     background-color: rgb(89, 177, 165);
     color: #FFF;
@@ -43,96 +66,9 @@ h5, h4 {
 
 }
 
-.cont-box:hover h5{
+.cont-box:hover p{
     color: rgb(138, 37, 233);
 
-}
-
-span{
-    font-size: larger;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 50%;
-    /*background-color: rgb(162, 215, 235);*/
-}
-
-
-/*   ICONE C0NTATOS   */
-.icon {
-    position: relative;
-    display: inline-block;
-}
-
-.carousel-item{
-    gap: 1em;
-}
-
-.hab {
-    text-align: center;
-    width: 140px;
-    max-width: 140px;
-    background-color:rgb(15, 28, 145);
-    color: #FFF;
-    padding: 10px;
-    border-radius: 30px;
-}
-
-.icon .tooltip {
-    visibility: hidden;
-    width: 100px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Posiciona a tooltip acima do ícone */
-    left: 50%;
-    margin-left: -50px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.icon .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%; /* Abaixo da tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.icon:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-@keyframes blinking {
-    0%, 100% { opacity: 1; } 
-    50% { opacity: 0; }     
-}
-
-.blinking-text {
-    animation: blinking 1s infinite;
-}
-
-#block-box-dd {
-    display: flex;
-}
-
-#block-box-dd .box-dd1  {
-    max-width: 400px;
-    width: 400px;
-}
-
-#block-box-dd .box-dd2 {
-    max-width: 500px;
-    width: 500px;
 }
 
 #btn-zap{
@@ -157,69 +93,102 @@ footer{
     padding: 20px;
 }
 
+@media (max-width: 1100px) {
+    .container-projetc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
+    }
 
-/* icon  */
-.icon i{
-    font-size: 22pt;
-    color: rgb(15, 28, 145);
+    .cont-box {
+        width: 100%;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 }
 
-i:hover {
-    color: #FFF;
-}
+@media (max-width: 700px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/*  resposividade do site  */
-@media (max-width: 768px){
+    .container .card {
+        width: 100%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-    h5{
-        font-size: 11pt !important;
+    .card {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
     }
 
     p, li{
         font-size: 12pt;
+        line-height: 1.5;
     }
-    .carousel-item img {
+
+    .card-body{
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 14pt;
+    }
+
+    h5 {
+        font-size: 13pt;
+    }
+
+    .container-projetc {
         width: 100%;
-        height: 30vh;
-        background-color: rgb(162, 215, 235);
-    }
-
-    h3{
-        font-size: 14pt !important;
-    }
-
-    .container-projetc{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 1rem; 
     }
 
-    .cont-box{
-        max-width: 100%;
-       
+    .cont-box {
+        width: 100%;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
-    #block-box-dd {
-        display: block;
+    img {
+        width: 100%;
+        height: auto;
     }
-    
-    #block-box-dd .box-dd1  {
+
+    ul {
+        width: 100%;
+        gap: 10px;
+    }
+
+    ul li{
+        background-color: rgb(80, 178, 216);
+        color: #FFF;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .list-group {
+        font-size: 0.9rem; 
+    }
+
+    .btn {
         width: 100%;
     }
-    
-    #block-box-dd .box-dd2 {
-        width: 100%;
-        margin-top: 1.5em;
-    }
-    
+
     #btn-zap{
-        animation: float 5s ease-in-out infinite;
-    }
-
-    #btn-zap{
-        margin-top: 1em;
+        margin-top: .5rem;
         width: 100%;
-    }
-
-    .text-btn-zap{
-        margin-top: 1em;
     }
 }
