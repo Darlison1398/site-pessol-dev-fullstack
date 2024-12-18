@@ -23,3 +23,7 @@ function cltemp() {
 function testeClimaTemp() {
     window.open('https://drive.google.com/file/d/1GczrO194hscAJkmSZZV1S_BbIdalWcJX/view?usp=sharing');
 }
+
+function videoEducaSearch() {
+    window.open('https://drive.google.com/file/d/1Af1BLMGi71mRv96PNn9J9Q5ghcs6PzJf/view?usp=sharing');
+}
