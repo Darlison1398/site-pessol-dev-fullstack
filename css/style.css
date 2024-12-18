@@ -17,8 +17,6 @@ i:hover {
     color: #FFF;
 }
 
-
-
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +29,7 @@ ul li{
     font-weight: 500;
 }
 
-.list-group h5, .list-group-item h5{
+.list-group h5, .list-group-item h5, .modal-title{
     color: rgb(138, 37, 233);
 }
 
@@ -44,13 +42,14 @@ p, li{
 .container-projetc{
     justify-content: center;
     display: flex;
-    gap: 2em;
+    gap: 1em;
 }
 
 .cont-box{
     background-color: rgb(89, 177, 165);
     color: #FFF;
     max-width: 300px;
+    width: 300px;
     max-height: 50vh;
     padding: 10px;
     border-radius: 20px;
@@ -58,6 +57,19 @@ p, li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
+}
+
+.icon-question{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: end;
+}
+.icon-question i {
+    background-color: rgb(138, 37, 233);
+    color: #FFF;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .cont-box:hover{

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>devQA</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -60,23 +60,38 @@
 
             <div class="list-group-item p-2">
                 <h5>Projetos pessoais</h5>
+                <!--div class="d-flex" style="justify-content: space-between;">
+                    <h5>Projetos pessoais</h5>
+                    <div class="icon-question">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                </div-->
                 <div class="container-projetc mt-3">
                     <div class="cont-box">
                         <p>
                             Usando selenium + JUnit na automação de testes de uma aplicação pessoal
                         </p>
-                        <button class="btn btn-primary" id="link">Acessar projeto</button>
+                        <div class="icon-question" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
+                        <button class="btn btn-primary" id="link" onclick="testeClimaTemp()">Acessar projeto</button>
                     </div>
                     <div class="cont-box">
                         <p>
                             Aplicação pessoal que mostra o clima de uma determinada região escolhida
                         </p>
+                        <div class="icon-question" data-bs-toggle="modal" data-bs-target="#myModalA">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
                         <button class="btn btn-primary" id="link" onclick="cltemp()">Acessar projeto</button>
                     </div>
                     <div class="cont-box">
                         <p>
-                            Veja o video de uma apresentação do meu TCC, EducaSearch, um site web
+                            Veja o video da apresentação do meu TCC, EducaSearch, um site web
                         </p>
+                        <div class="icon-question" data-bs-toggle="modal" data-bs-target="#myModalB">
+                            <i class="fa-solid fa-question"></i>
+                        </div>
                         <button class="btn btn-primary" id="link">Acessar projeto</button>
                     </div>
                 </div>
@@ -86,14 +101,8 @@
                 <h5>Formação acadêmica</h5>
                 <p style="color: rgb(15, 28, 145); font-weight: 500;">
                     Ensino superior em Análise e Desenvolvimento de Sistemas - Faculdade: 
-                        Instituto Federal de Santa Catarina (2022-2024)
+                    Instituto Federal de Santa Catarina (2022-2024)
                 </p>
-                <!--ul>
-                    <li>
-                        Ensino superior em Análise e Desenvolvimento de Sistemas - Faculdade: 
-                        Instituto Federal de Santa Catarina (2022-2024)
-                    </li>
-                </ul-->
             </div>
 
             <div class="list-group-item p-2"><hr>
@@ -138,6 +147,79 @@
                 </div>
                 <p class="text-center mt-3" style="font-size: 14pt;"> &copy; Darlison Silva - 2024 - Todos os direitos reservados.</p>
             </footer>
+        </div>
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Teste automatizado</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Nesse projeto, eu mostro um teste que foi construído usando JUnit com Selenium, em Java.
+                            Eu construí o teste para acessar o website Clima Temp e realizar várias operações que uma
+                            pessoa comum faria. O teste verifica se o nome da cidade escolhida é mostrado corretamente, 
+                            se o tempo está apresentado em graus Celsius e se os botões com as sugestões de cidades 
+                            estão funcionando corretamente. <br>
+                            O link abaixo é da aplicação que está sendo testada.
+                        </p>
+                        <a href="https://drsilva-clima-temp.netlify.app/" target="_blank">
+                            Clima temp
+                        </a>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModalA">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Aplicação Clima temp</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Essa aplicação é um site web que eu desenvolvi. Nesse projeto, eu fiz o consumo de uma API 
+                            do OpenWeatherMap para buscar dados do clima de uma determinada cidade. Nele, eu 
+                            dei um foco maior no Front-end, e por conta disso, usei tecnologias como Html,
+                            Css, Javascript e Bootstrap.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModalB">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Tcc, EducaSearch</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            O EducaBusca é um site web que pode ser acessado de forma gratuita por qualquer usuário. 
+                            Ele tem o propósito de centralizar informações sobre processos seletivos abertos em 
+                            Universidades públicas e Institutos Federais, visando facilitar que os usuários consigam 
+                            uma vaga em uma instituição de ensino superior público. <br>
+                            Clique no botão "Acessar projeto" para ver o video do dela sendo testada.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="./script/script.js"></script>
