@@ -20,8 +20,8 @@ function cltemp() {
     window.open('https://drsilva-clima-temp.netlify.app/');
 }
 
-function testeClimaTemp() {
-    window.open('https://drive.google.com/file/d/1GczrO194hscAJkmSZZV1S_BbIdalWcJX/view?usp=sharing');
+function appUserAuth() {
+    window.open('https://lista-produtos-aravhyhxcbbebfcx.brazilsouth-01.azurewebsites.net/');
 }
 
 function crudapp() {

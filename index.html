@@ -40,8 +40,9 @@
                     <li>Bootstrap</li>
                     <li>Java</li>
                     <li>Spring Boot</li>
-                    <li>Spring Security</li>
                     <li>API RESTFul</li>
+                    <li>ASP.NET Core</li>
+                    <li>MVC</li>
                     <li>JPA</li>
                     <li>SQL</li>
                     <li>Postman</li>
@@ -59,12 +60,12 @@
                 <div class="container-projetc mt-3">
                     <div class="cont-box">
                         <p>
-                            Usando selenium + JUnit na automação de testes de uma aplicação pessoal
+                            Aplicação de altenticação de usuários e criação de lista de produtos
                         </p>
                         <div class="icon-question" data-bs-toggle="modal" data-bs-target="#myModal">
                             <i class="fa-solid fa-question"></i>
                         </div>
-                        <button class="btn btn-primary" id="link" onclick="testeClimaTemp()">Acessar projeto</button>
+                        <button class="btn btn-primary" id="link" onclick="appUserAuth()">Acessar projeto</button>
                     </div>
                     <div class="cont-box">
                         <p>
@@ -143,21 +144,23 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Teste automatizado</h4>
+                        <h4 class="modal-title">DrList Products</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <p>
-                            Nesse projeto, eu mostro um teste que foi construído usando JUnit com Selenium, em Java.
-                            Eu construí o teste para acessar o website Clima Temp e realizar várias operações que uma
-                            pessoa comum faria. O teste verifica se o nome da cidade escolhida é mostrado corretamente, 
-                            se o tempo está apresentado em graus Celsius e se os botões com as sugestões de cidades 
-                            estão funcionando corretamente. <br>
-                            O link abaixo é da aplicação que está sendo testada.
+                            Essa aplicação conta com funcionalidades de autenticação de usuários via tokens (JWT) e 
+                            gerenciamento de listas de produtos. Cada usuário autenticado pode criar sua própria 
+                            lista de produtos, além de editar ou excluir itens de forma individual. O foco principal 
+                            foi garantir segurança e personalização, permitindo que cada usuário gerencie exclusivamente 
+                            suas informações. Ela foi desenvolvida em ASP.NET Core com banco de dados SQL Server. Além disso,
+                            ela foi hospedada na Azure, garantindo a disponibilidade e escalabilidade do sistema. <br>
+                            Clique no botão "Acessar projeto" e siga esses passos para testar ela:
+                            <li>Crie uma conta no sistema (é bem simples)</li>
+                            <li>Faça login</li>
+                            <li>Após o login, cria sua lista de produtos</li>
+                            
                         </p>
-                        <a href="https://drsilva-clima-temp.netlify.app/" target="_blank">
-                            Clima temp
-                        </a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
