@@ -25,5 +25,5 @@ function appUserAuth() {
 }
 
 function crudapp() {
-    window.open('https://crudapp-bsenbvh7ahbqeagc.brazilsouth-01.azurewebsites.net/');
+    window.open('https://crud-app-gtbkhvb9fucxeeef.brazilsouth-01.azurewebsites.net/');
 }
