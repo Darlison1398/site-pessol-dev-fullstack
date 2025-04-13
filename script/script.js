@@ -21,7 +21,7 @@ function cltemp() {
 }
 
 function appUserAuth() {
-    window.open('https://lista-produtos-aravhyhxcbbebfcx.brazilsouth-01.azurewebsites.net/');
+    window.open('https://userauth-h3cfgce6hde2e0ax.brazilsouth-01.azurewebsites.net/');
 }
 
 function crudapp() {
