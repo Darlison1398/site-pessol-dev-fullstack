@@ -1,7 +1,7 @@
 
 function zap() {
     onmouseover = "Whatsapp";
-    window.open('https://api.whatsapp.com/send?phone=5548996343096&text=Oi, tudo bem? Vi seu website e resolvi entrar em contato pra gente conversar. :)');
+    window.open('https://api.whatsapp.com/send?phone=5511954201792&text=Oi, tudo bem? Vi seu website e resolvi entrar em contato pra gente conversar. :)');
 }
 
 function din() {
@@ -21,9 +21,9 @@ function cltemp() {
 }
 
 function appUserAuth() {
-    window.open('https://userauth-h3cfgce6hde2e0ax.brazilsouth-01.azurewebsites.net/');
+    window.open('https://easy-gestor.netlify.app');
 }
 
 function crudapp() {
-    window.open('https://crud-app-gtbkhvb9fucxeeef.brazilsouth-01.azurewebsites.net/');
+    window.open('https://crud.drsilva-dev.cloud/');
 }
